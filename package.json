@@ -5,9 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:electron": "vue-cli-service build:electron",
+    "serve:electron": "vue-cli-service serve:electron"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -16,6 +19,9 @@
     "@vue/cli-plugin-babel": "^3.0.0-rc.11",
     "@vue/cli-plugin-eslint": "^3.0.0-rc.11",
     "@vue/cli-service": "^3.0.0-rc.11",
+    "electron": "^2.0.2",
+    "vue-cli-plugin-electron-builder": "^1.0.0-beta.6",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "main": "dist_electron/bundled/background.js"
 }
