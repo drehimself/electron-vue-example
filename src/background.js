@@ -37,6 +37,9 @@ function createMainWindow () {
         slashes: true
       })
     )
+
+    image.loadURL(`file://${__dirname}/index.html#image`)
+    settings.loadURL(`file://${__dirname}/index.html#settings`)
   }
 
   window.on('closed', () => {
