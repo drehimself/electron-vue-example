@@ -27,7 +27,7 @@ export default {
   created() {
     this.initMenu();
 
-    axios.get("https://reddit.com/r/aww.json")
+    axios.get("https://reddit.com/r/aww.json?raw_json=1")
       .then(response => {
         this.posts = response.data.data.children
       })
